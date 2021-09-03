@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.UploadFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/layLost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@drawable/circle_shadow"
+                android:elevation="@dimen/h5">
+
+                <com.app.lostandfound.costomview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/lost_something"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:edittextfont="OpenSans-Bold.ttf" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layLost"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/circle_shadow"
+                android:elevation="@dimen/h5">
+
+                <com.app.lostandfound.costomview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/found_something"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:edittextfont="OpenSans-Bold.ttf" />
+
+            </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

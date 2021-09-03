@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.UploadLostFoundImageActivity">
+<include layout="@layout/toolbar_default"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnNext"/>
+    <com.app.lostandfound.costomview.CustomTextView
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/finish"
+        android:textSize="18sp"
+        style="@style/ButtonRippleStyle"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:edittextfont="OpenSans-Bold.ttf"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/squre_theme_bg"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+       android:src="@drawable/add"
+        android:tint="#ffffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+      android:layout_marginBottom="100dp"
+        android:layout_marginRight="20dp"
+        app:fabSize="normal" />
+</RelativeLayout>

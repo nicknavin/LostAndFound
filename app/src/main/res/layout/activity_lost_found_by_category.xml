@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.LostFoundByCategoryActivity">
+    <LinearLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+      <ImageView
+          android:id="@+id/imgBack"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/back"
+          android:layout_gravity="center"
+          android:padding="10dp"
+          ></ImageView>
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/curve_border_btn"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="10dp"
+            android:hint="@string/search_lose_thing"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+
+            android:text=""
+            app:edittextfont="Roboto-Regular.ttf"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp"
+            />
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black_op"
+        android:layout_marginTop="10dp"/>
+
+    <com.app.lostandfound.costomview.CustomTextView
+        android:id="@+id/txtFilter"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+       android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/filter"
+        android:textAllCaps="true"
+        android:layout_gravity="center|right"
+        android:background="@drawable/square_theme_storckbtn"
+        android:textColor="@color/colorPrimaryDark"
+        app:edittextfont="Roboto-Regular.ttf"
+        android:textSize="16sp"
+        android:gravity="center"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/Widget.Design.TabLayout"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="3dp"
+        app:tabBackground="@drawable/selector_tab_indicator"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabIndicatorColor="@color/colorPrimaryDark" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</LinearLayout>

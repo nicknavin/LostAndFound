@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.lostandfound">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+<!--        <activity android:name=".ChatLogin"></activity>-->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Main3Activity"
+            android:label="@string/title_activity_main3" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" /> <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" />
+        <activity android:name=".view.LoginActivity" />
+        <activity android:name=".view.FilterPostActivity" /> <!-- <activity android:name=".view.FirstActivity"></activity> -->
+        <activity android:name=".view.LostFoundByCategoryActivity" />
+        <activity android:name=".view.FullScreenActivity" />
+        <activity android:name=".view.PostDetailActivity" />
+        <activity android:name=".view.PostEditDetailActivity" />
+        <activity android:name=".view.ui.RegionActivity" />
+        <activity android:name=".view.RegisterActivity" />
+        <activity android:name=".view.PeopleFormActivity" /> <!-- <activity android:name=".view.LoginActivity" /> -->
+        <activity android:name=".view.PostUpdateActivity" />
+        <activity android:name=".view.LastLocationUpdateActivity" />
+        <activity android:name=".view.LastLocationActivity" />
+        <activity android:name=".view.SearchActivity" />
+        <activity android:name=".view.PetFormActivity" />
+        <activity android:name=".view.CategoryActivity" />
+        <activity android:name=".view.UploadLostFoundImageActivity" />
+        <activity android:name=".view.FilterActivity" />
+        <activity android:name=".view.ProfileEditActivity" />
+        <activity android:name=".view.LostFoundProductActivity" />
+        <activity android:name=".view.UploadImageActivity" />
+        <activity android:name=".view.SubCategoryActivity" />
+        <activity android:name=".view.places.MainPlaceActivity" />
+        <activity android:name=".view.HomeActivity"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9444676719023189~7604248654" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

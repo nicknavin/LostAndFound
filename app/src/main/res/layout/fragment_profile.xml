@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+<LinearLayout
+    android:id="@+id/layLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+            <com.app.lostandfound.costomview.CustomTextView
+                android:id="@+id/txt_login_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_signup"
+
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:background="@color/grey" />
+</LinearLayout>
+            <LinearLayout
+                android:id="@+id/layProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <com.app.lostandfound.costomview.CustomTextView
+                    android:id="@+id/txt_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Navin Nimade"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary" />
+
+                <com.app.lostandfound.costomview.CustomTextView
+                    android:id="@+id/txt_user_mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+919826545"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <com.app.lostandfound.costomview.CustomTextView
+                    android:id="@+id/txt_user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="navin@gmail.com"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <com.app.lostandfound.costomview.CustomTextView
+                android:id="@+id/txt_change_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:background="@color/grey"/>
+
+
+
+
+            <com.app.lostandfound.costomview.CustomTextView
+                android:id="@+id/txt_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:background="@color/grey"></View>
+            <com.app.lostandfound.costomview.CustomTextView
+                android:id="@+id/txt_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/About"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:background="@color/grey"></View>
+            <com.app.lostandfound.costomview.CustomTextView
+                android:id="@+id/txt_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_support"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:background="@color/grey"></View>
+            <LinearLayout
+                android:id="@+id/layLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+            <com.app.lostandfound.costomview.CustomTextView
+                android:id="@+id/txt_sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_out"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:background="@color/grey"></View>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>

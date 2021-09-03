@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imgSubCatg"
+        android:layout_width="40dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:src="@mipmap/app_icon"></ImageView>
+    <com.app.lostandfound.costomview.CustomTextView
+        android:id="@+id/txtSubCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:edittextfont="OpenSans-Regular.ttf"
+        android:text="category"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"/>
+
+</LinearLayout>

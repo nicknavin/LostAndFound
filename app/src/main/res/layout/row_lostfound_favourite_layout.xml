@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        app:cardElevation="5dp"
+        android:layout_margin="5dp"
+        card_view:cardMaxElevation="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.app.lostandfound.costomview.CustomImageView
+                    android:id="@+id/imgPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:minHeight="200dp"
+
+                    app:image_type="half"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/place_holder"
+                    />
+
+                <CheckBox
+                    android:id="@+id/imgLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/img_selector"
+                    />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.app.lostandfound.costomview.CustomTextView
+                    android:id="@+id/txtLostFoundName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:edittextfont="OpenSans-Bold.ttf"
+
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    />
+
+                <com.app.lostandfound.costomview.CustomTextView
+                    android:id="@+id/txtLostFoundAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:edittextfont="OpenSans-Regular.ttf"
+
+
+                    android:textColor="@color/black"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    />
+                <com.app.lostandfound.costomview.CustomTextView
+                    android:id="@+id/txtLostFoundDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:edittextfont="OpenSans-Regular.ttf"
+
+                    android:textColor="@color/black"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

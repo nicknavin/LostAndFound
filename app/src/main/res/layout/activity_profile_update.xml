@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:bind="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.app.lostandfound.viewmodels.LoginViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/lay_top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                app:srcCompat="@mipmap/back"/>
+
+            <com.app.lostandfound.costomview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                app:border_width="1dp"
+                android:background="@drawable/circle_white"/>
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always"
+        android:layout_alignParentTop="true"
+android:layout_marginTop="170dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:focusable="true"
+
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp"
+
+
+
+
+        app:cardUseCompatPadding="false"
+        app:cardBackgroundColor="#ffffff"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:scrollbars="none">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <com.app.lostandfound.costomview.CustomEditText
+                        android:id="@+id/edt_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/edt_box_line"
+                        android:hint="@string/hint_firstname"
+
+                        android:text="@{viewModel.user.f_name}"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:edittextfont="OpenSans-Regular.ttf" />
+                    <com.app.lostandfound.costomview.CustomEditText
+                        android:id="@+id/edt_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/edt_box_line"
+                        android:hint="@string/hint_lastname"
+
+                        android:text="@{viewModel.user.l_name}"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:edittextfont="OpenSans-Regular.ttf" />
+
+                    <com.app.lostandfound.costomview.CustomEditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@{viewModel.user.email}"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:background="@drawable/edt_box_line"
+                        android:hint="@string/hint_email"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:edittextfont="OpenSans-Regular.ttf" />
+                    <com.app.lostandfound.costomview.CustomEditText
+                        android:id="@+id/edt_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@{viewModel.user.phone}"
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/edt_box_line"
+                        android:hint="@string/hint_mobile"
+                        android:inputType="none"
+                        android:clickable="false"
+                        android:paddingLeft="10dp"
+                        android:focusable="false"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:edittextfont="OpenSans-Regular.ttf" />
+
+                    <com.app.lostandfound.costomview.CustomTextView
+                        android:id="@+id/btnSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/solid_curve_btn"
+                        android:text="@string/save"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        app:edittextfont="OpenSans-Bold.ttf"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+
+
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

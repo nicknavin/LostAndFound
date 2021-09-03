@@ -1,0 +1,42 @@
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+android:layout_alignParentTop="true"
+    android:background="#FAFAFA"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp"
+    android:elevation="5dp"
+
+    app:titleTextColor="@android:color/white">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@mipmap/back"/>
+
+    <com.app.lostandfound.costomview.CustomTextView
+        android:id="@+id/header_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:edittextfont="OpenSans-Bold.ttf"
+        android:layout_toRightOf="@+id/imgback"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Category"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

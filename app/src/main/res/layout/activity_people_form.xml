@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LastLocationActivity">
+    <include layout="@layout/toolbar_default"
+        ></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/toolbar_actionbar"
+android:layout_above="@+id/btnNext"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_actionbar">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+
+
+        >
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:maxLength="25"
+            android:background="@drawable/edit_round"
+            android:hint="@string/title"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:maxLength="25"
+            android:background="@drawable/edit_round"
+            android:hint="@string/firstname"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_round"
+            android:hint="@string/lastname"
+            android:maxLength="25"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtBreed"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_round"
+            android:hint="@string/breed"
+            android:maxLength="25"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtBrand"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_round"
+            android:hint="@string/brand"
+            android:maxLength="25"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtModel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_round"
+            android:hint="@string/model"
+            android:maxLength="25"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+
+
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtAge"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_round"
+            android:hint="@string/age"
+            android:maxLength="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:id="@+id/groupradio"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- In RadioGroup create the 1 Radio Button-->
+            <!-- like this we will add some more Radio Button-->
+            <RadioButton
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_male"
+                android:text="@string/male"
+                android:checked="true"
+                android:buttonTint="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_female"
+                android:layout_marginTop="10dp"
+                android:text="@string/female"
+                android:buttonTint="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+        </RadioGroup>
+
+
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtBodyColor"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_round"
+            android:hint="@string/bodycolor"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:maxLength="25"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtHeight"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_round"
+            android:hint="@string/height"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:maxLength="25"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+
+
+
+        <com.app.lostandfound.costomview.CustomEditText
+            android:id="@+id/edtRewardPrice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_round"
+            android:hint="@string/reward"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+        <com.app.lostandfound.costomview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+
+            android:text="@string/reward_msg"/>
+
+    </LinearLayout>
+    </ScrollView>
+    <com.app.lostandfound.costomview.CustomTextView
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+android:layout_alignParentBottom="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/squre_theme_bg"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:edittextfont="OpenSans-Bold.ttf" />
+
+
+
+</RelativeLayout>
